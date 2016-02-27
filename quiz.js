@@ -12,10 +12,10 @@ function print(j, height){
     phrase+= "p";
   }
 
-//This is for the space on the right.
-  for (i=0; i<=height-j;i+=1){
-  	phrase += " ";
-  }
+// //This is for the space on the right.
+//   for (i=0; i<=height-j;i+=1){
+//   	phrase += " ";
+//   }
 
   var output = phrase.replace(/p/g, document.getElementById("mark").value)
   console.log(output);
@@ -29,6 +29,10 @@ function draw(height){
 }
 
 //trigger this function first.
+document.getElementById("btn").addEventListener("click", btn);
+
+
+
 function btn(){
 var height = document.getElementById("height").value;
 draw(height);

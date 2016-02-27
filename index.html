@@ -12,12 +12,14 @@
 <body>
   <h2>Build a tree here:</h2>
   <section>
+  <form onsubmit="return false">
     <label for="height">Enter a NUMBER for the height of the tree</label><br>
-    <input type="number" id="height" placeholder="height"><br>
+    <input type="text" id="height" placeholder="height"><br>
 
     <label for="mark">Enter a TEXT/MARK to build the tree</label><br>
     <input type="text" id="mark" placeholder="mark"><br>
-    <button onclick="btn()">Grow Your Tree</button>
+    <button id= "btn">Grow Your Tree</button>
+  </form>
   </section>
   <script src="quiz.js"></script>
   
